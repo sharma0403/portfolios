@@ -1,0 +1,29 @@
+.emoji-list {
+    list-style: none; /* Remove default list style */
+    padding: 0;
+}
+
+.emoji-list li {
+    position: relative; /* Allow positioning of the pseudo-element */
+    padding-left: 30px; /* Space for the emoji */
+}
+
+.emoji-list li::before {
+    content: "👉🏼"; /* Emoji to be used as the marker */
+    position: absolute; /* Position it absolutely */
+    left: 0; /* Align it to the left of the list item */
+}
+
+.resume-area .resume-content .resume-timeline .item.edu::before{
+    content: '🎓';
+    position: absolute;
+    left: -20px; /* Adjust the position as needed */
+    font-size: 2rem; /* Adjust the size of the emoji as needed */
+    transition: .3s;
+    background: none;
+    top: -12px;
+    filter: drop-shadow(2px 4px 16px  var(--primary_color));
+}
+.px-1{
+    padding-right: 10px;
+}
